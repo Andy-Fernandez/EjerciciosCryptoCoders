@@ -10,7 +10,7 @@ pragma solidity 0.8.24;
  * Escenarios a validar/proteger:
  * 1
  * - acceso: que solo el admin sea quien pueda ejecutar una función
- *   nombre modifer: soloAdmin
+ *   nombre modifer: soloAdmin -> Desplegar mensaje "No eres el admin"
  *   aplicar al método: metodoAccesoProtegido
  *
  * 2
@@ -51,13 +51,13 @@ contract Ejercicio_2 {
     address public admin = 0x08Fb288FcC281969A0BBE6773857F99360f2Ca06;
 
     modifier soloAdmin() {
-        // definir logica
+        require(msg.sender == admin, "No eres el admin" );
         _;
     }
 
-    // function metodoAccesoProtegido() {
-    //     // ...logica
-    // }
+    function metodoAccesoProtegido() public soloAdmin(){
+
+    }
 
     // 2
     // definir lista blanca con un mapping
