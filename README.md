@@ -38,30 +38,10 @@ Aquí hay algunos comandos comunes que puedes ejecutar en este proyecto:
   npx hardhat compile
   ```
 
-- **Ejecutar pruebas**: Ejecuta las pruebas unitarias para los contratos inteligentes:
+- **Ejecutar pruebas**: Ejecuta las pruebas unitarias para los contratos inteligentes, las pruebas de los contratos se encuentran en la carpeta test, por ejemplo:
 
   ```
-  npx hardhat test
+  npx hardhat test test/EjercicioTesting_1.js
   ```
 
-- **Desplegar contratos**: Despliega los contratos en una red de prueba o en la red principal:
-
-  ```
-  npx hardhat run scripts/deploy.js --network rinkeby
-  ```
-
-## Contribución
-
-¡Estamos abiertos a contribuciones! Si deseas contribuir al proyecto, asegúrate de seguir estas pautas:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
-3. Haz tus cambios y haz commit (`git commit -am 'Agrega nueva funcionalidad'`).
-4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
-5. Abre un pull request en este repositorio.
-
-## Soporte
-
-Si tienes alguna pregunta o problema con el proyecto, no dudes en abrir un issue en este repositorio o contactar al equipo de desarrollo.
-
-¡Gracias por contribuir!
+  Este te dara feedback de lo que esta bien o mal de tu contrato
