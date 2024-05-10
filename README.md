@@ -1,6 +1,6 @@
 # Proyecto de Solidity con Hardhat
 
-Aqui les dejo 3 ejecicios, cada uno tiene su respectivo enunciado y en la carpeta 'notas' hay un pequeño repaso de los conceptos importates.
+Aqui les dejo 3 ejecicios, cada uno tiene su respectivo enunciado y en la carpeta 'notas' hay un pequeño repaso de los conceptos importates que vimos hasta ahora.
 
 ## Requisitos previos
 
@@ -37,11 +37,13 @@ Aquí hay algunos comandos comunes que puedes ejecutar en este proyecto:
   ```
   npx hardhat compile
   ```
+- **Ejecicio**: Los ejercicios se encuentran en la carpeta 'contracts' junto a su respectivo enunciado. (si creas un nuevo contrato hazlo en esa carpeta)
 
-- **Ejecutar pruebas**: Ejecuta las pruebas unitarias para los contratos inteligentes, las pruebas de los contratos se encuentran en la carpeta test, por ejemplo:
+- **Ejecutar pruebas**: Para probar tus contratos puedes ejecutar las pruebas, que se encuentran en la carpeta test, por ejemplo:
 
   ```
   npx hardhat test test/EjercicioTesting_1.js
   ```
 
-  Este te dara feedback de lo que esta bien o mal de tu contrato
+  Las pruebas pueden darte alguna pista de lo que hiciste mal.
+  
